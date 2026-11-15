@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Starlight, IRIS ROBO0065: engineering research on ranking reversals in autonomous robot design, with published data, physical experiments and transparent limitations.">
+<title>Starlight | IRIS National Fair | ROBO0065</title>
+<style>
+  :root{--ink:#10243b;--muted:#536880;--navy:#205a9c;--teal:#098780;--amber:#ce9029;--bg:#f5f7fa;--line:#e2e9f0;--paper:white;--red:#a9403d}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.58}
+  a{color:var(--navy);text-underline-offset:3px}a:hover{color:var(--teal)}.shell{max-width:1120px;margin:auto;padding:0 24px}
+  header{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:3}
+  .nav{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:65px;flex-wrap:wrap}
+  .wordmark{font-size:17px;font-weight:860;letter-spacing:1.4px;color:var(--ink);text-decoration:none}
+  nav{display:flex;gap:21px;align-items:center;flex-wrap:wrap}nav a{font-size:13px;font-weight:660;text-decoration:none;color:var(--muted)}
+  .hero{background:linear-gradient(130deg,#0c223b 0%,#11385d 64%,#0e5a66 100%);color:white;padding:73px 0 56px}
+  .hero-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:50px;align-items:center}
+  .eyebrow{text-transform:uppercase;letter-spacing:2.1px;font-size:12px;font-weight:750;color:#8bceca}
+  h1{font-size:clamp(48px,6vw,86px);line-height:1;letter-spacing:-3px;margin:20px 0 12px;font-weight:860}
+  .tagline{font-size:clamp(19px,2.3vw,27px);line-height:1.3;letter-spacing:-.6px;font-weight:600;max-width:630px;margin:0 0 18px;color:#edf8ff}
+  .sub{font-size:15px;line-height:1.7;color:#cfdeed;max-width:620px}
+  .hero figure{margin:0}.hero img{display:block;border-radius:13px;width:100%;aspect-ratio:4/3;object-fit:cover;background:#dfe9f0;box-shadow:0 24px 60px #0004}
+  figcaption{font-size:12px;color:#a8bfd0;margin-top:10px}
+  .links{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-block;padding:11px 17px;border-radius:7px;background:#fff;color:var(--ink);font-weight:750;font-size:13px;text-decoration:none}.btn.alt{border:1px solid #7394a7;color:#fff;background:transparent}.btn:hover{background:#d8eeef;color:#10243b}
+  .meta{border-bottom:1px solid var(--line);background:#fff;padding:17px 0}.meta p{margin:0;color:var(--muted);font-size:13px}
+  main{padding:38px 0 68px}.section{margin:45px 0 56px}.section h2{font-size:28px;line-height:1.2;margin:0 0 8px;letter-spacing:-.65px}.intro{color:var(--muted);margin:0 0 24px;max-width:820px}
+  .numbers{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.metric{background:var(--paper);border:1px solid var(--line);padding:22px;border-radius:12px;min-width:0}.metric strong{font-size:clamp(25px,3vw,37px);letter-spacing:-1.2px;display:block;line-height:1.14}.metric span{font-size:13px;color:var(--muted);display:block;margin-top:8px}
+  .columns{display:grid;grid-template-columns:1fr 1fr;gap:19px}.panel{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:20px}.panel img{width:100%;display:block;border-radius:5px}.panel p,.detail{font-size:14px;color:var(--muted);margin:.7em 0 0}.panel h3{font-size:17px;margin:0 0 10px}
+  .section img.chart{display:block;width:100%;background:#fff;border:1px solid var(--line);border-radius:12px}
+  .experiment-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.experiment{background:white;border:1px solid var(--line);border-radius:9px;padding:17px}.experiment small{color:var(--teal);font-weight:800;letter-spacing:.55px;text-transform:uppercase}.experiment h3{margin:7px 0;font-size:17px}.experiment p{font-size:13px;color:var(--muted);margin:0}
+  .notice{padding:22px 25px;border-left:4px solid var(--amber);background:#fff;border-radius:0 10px 10px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);border-right:1px solid var(--line);font-size:14px;color:#32445a}.notice p{margin:8px 0 0}.notice strong{color:var(--ink)}
+  .resources{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.resource{display:block;border:1px solid var(--line);border-radius:10px;background:white;padding:18px 19px;text-decoration:none;color:var(--ink);font-weight:700}.resource em{display:block;font-size:13px;font-style:normal;font-weight:400;color:var(--muted);margin-top:4px}.resource:hover{border-color:#8bbcb7;color:var(--ink)}
+  footer{background:#10243b;color:#b6c9da;padding:30px 0;font-size:13px}footer a{color:#d3eff1}footer strong{color:white}
+  @media (max-width:900px){.hero-grid,.columns{grid-template-columns:1fr}.hero{padding-top:45px}.hero img{max-height:370px}.numbers{grid-template-columns:repeat(2,1fr)}.experiment-grid{grid-template-columns:repeat(2,1fr)} }
+  @media (max-width:550px){.shell{padding:0 16px}.nav{padding:10px 0}nav{gap:11px}nav a{font-size:12px}.hero{padding:41px 0 29px}.hero-grid{gap:24px}h1{letter-spacing:-1.8px}.numbers,.experiment-grid,.resources{grid-template-columns:1fr}.metric{padding:18px}.section{margin:30px 0 42px}.section h2{font-size:24px}.panel{padding:10px}.links a{flex:1;text-align:center}.meta p{font-size:12px}}
+</style>
+</head>
+<body>
+<header><div class="shell nav"><a href="#top" class="wordmark">✧ STARLIGHT <span style="font-size:11px;font-weight:500;color:#789">/ ROBO0065</span></a>
+<nav><a href="#finding">Finding</a><a href="#experiments">Experiments</a><a href="#limits">Limitations</a><a href="#resources">Evidence</a></nav></div></header>
+<div id="top" class="hero"><div class="shell hero-grid">
+<div><div class="eyebrow">IRIS National Fair 2026–27 / Robotics &amp; Intelligent Machines</div><h1>STARLIGHT</h1><p class="tagline">When the simulator changes its mind.</p>
+<p class="sub">Small shifts in steering assumptions can reverse which robot architecture appears better. We tested that problem with a physical autonomous car, paired simulation contrasts and an evidence-aware decision workflow.</p>
+<div class="links"><a class="btn" href="paper/Starlight_Engineering_Research_Paper.pdf">Read research paper · PDF</a><a class="btn alt" href="#finding">See the central finding</a></div></div>
+<figure><img src="assets/starlight-prototype.webp" alt="Historic front-view photograph of the small-scale Starlight autonomous vehicle." loading="eager"><figcaption>Starlight autonomous vehicle · historic competition hardware photograph</figcaption></figure>
+</div></div>
+<div class="meta"><div class="shell"><p><strong>Research authors:</strong> Aarav Jalan &amp; Darsh Zaveri &nbsp; • &nbsp; <strong>Mentor:</strong> Sunil Solanki &nbsp; • &nbsp; <strong>Study:</strong> 2026 &nbsp; • &nbsp; <strong>Project:</strong> ROBO0065</p></div></div>
+<main class="shell">
+<section class="section" id="finding"><h2>One design cannot be declared universally better</h2><p class="intro">A and D are two seven-feature architectures in a source-informed simulator. Their paired failure-risk difference changes sign when the specified steering-gain parameter changes. The independent confirmation results support both sides.</p>
+<div class="numbers"><div class="metric"><strong>752,000</strong><span>Recorded simulated robot missions</span></div><div class="metric"><strong>66</strong><span>Primary model conditions</span></div><div class="metric"><strong>+1.050 pp</strong><span>A favored at gain 1.200</span></div><div class="metric"><strong>−2.925 pp</strong><span>D favored at gain 1.260</span></div></div>
+<div class="section" style="margin-bottom:10px"><img class="chart" src="figures/01_confirmed_reversal.png" alt="Two confidence intervals on opposite sides of zero for simulated gain 1.200 and 1.260"><p class="detail">Independent confirmation bank · s = 0.030, dt = 0.040 s · positive delta = lower failure risk for A, negative = lower risk for D. These results do not represent two measured physical cars.</p></div>
+<div class="columns"><div class="panel"><img src="figures/02_grid_certificates.png" alt="Of 66 model conditions, eight favor A, 29 favor D, 29 remain unresolved"></div><div class="panel" style="display:flex;flex-direction:column;justify-content:center"><h3>The distinction matters</h3><p>The certificate only covers a finite declared simulation family and its sampling uncertainty. It does not establish a universal real-world outcome or validate an entire autonomous vehicle as safe. An unresolved result is not evidence of equivalence.</p><p>Physical steering calibration and docking studies separately investigate hardware sensitivity.</p></div></div></section>
+<section class="section" id="experiments"><h2>Measured, simulated, and audited</h2><p class="intro">The study separates physical experiments from simulation, and separates both from decision-cost benchmarking. No neat-looking total should quietly merge different populations.</p>
+<div class="experiment-grid">
+<article class="experiment"><small>WP1 · Safety</small><h3>Emergency stop</h3><p>10/10 initial checks; 23/24 confirmed overall, including one later failure.</p></article>
+<article class="experiment"><small>WP2 · Calibration</small><h3>Steering and latency</h3><p>Measured OLS slope ≈ 1.238. Latency p95 ≈ 28.16 ms; 3/200 misses at 33 ms.</p></article>
+<article class="experiment"><small>WP3 · Metrology</small><h3>Camera accuracy</h3><p>Position p95 2.480 mm passes its goal; heading p95 1.286° fails.</p></article>
+<article class="experiment"><small>WP4 · Physical</small><h3>Clock vs Compass</h3><p>In linkage mismatch: 6.42° vs 0.48° mean heading-shift magnitudes. Descriptive only.</p></article>
+<article class="experiment"><small>WP5–6 · Evaluation</small><h3>Docking and audit</h3><p>41/60 vs 53/60 docking successes; decisions agree with 8/10 held-out references.</p></article>
+<article class="experiment"><small>WP7 · Perturbation</small><h3>Linkage A–B–A</h3><p>Reversible intervention tracks mechanical response and current across three phases.</p></article>
+<article class="experiment"><small>WP8 · Transfer</small><h3>Colour sorter</h3><p>Three recipes S1, S2 and S3; pooled correct 588/673 items in 34 batches.</p></article>
+<article class="experiment"><small>D1 · Dependence</small><h3>Shared failures</h3><p>160 both-fail outcomes among 204 failure-bearing extended pairs, or 78.4%.</p></article>
+<article class="experiment"><small>Simulator · A/D</small><h3>Finite-model comparisons</h3><p>66 primary cells, eight independent confirmations and 12 new model-form conditions.</p></article>
+</div>
+<div class="columns" style="margin-top:20px"><div class="panel"><img src="figures/03_physical_heading_cohorts.png" alt="Three descriptive physical Clock/Compass heading cohorts"><p>Physical heading means are not a clean causal mismatch-versus-matched contrast.</p></div><div class="panel"><img src="figures/04_camera_accuracy_limits.png" alt="Position p95 passes and heading p95 fails the target"><p>The metrology miss and the later emergency-stop failure are disclosed rather than removed.</p></div><div class="panel"><img src="figures/05_sorter_transfer.png" alt="Pooled correct items for three sorter recipes S1 S2 S3"><p>Batch-level aggregation does not justify treating all items as independent draws.</p></div><div class="panel"><img src="figures/06_docking_session_totals.png" alt="Clock and Compass docking successes across five sessions"><p>Session totals cannot reconstruct the missing matched-pair WP5 outcome identities.</p></div></div></section>
+<section class="section" id="limits"><h2>What this release does not prove</h2><p class="intro">Reproducibility includes stating what cannot be reproduced. These are the current evidence boundaries, not decorative footnotes.</p>
+<div class="notice"><strong>Archived exports, not recovered raw studies.</strong><p>The publicly shared CSVs and retrospective Python replay tools verify internal arithmetic; they do not regenerate the missing 752,000 original simulator runs or authenticate sealed instrument footage. The original simulation generator and historical hardware acquisition sources are not in this public package.</p><p>The manuscript reports a 14.3–33.0% decision-cost reduction, but the benchmark's original policy definitions and action labels were not reconciled. It is <strong>not independently validated here</strong>. Five archived confirmation interval endpoints also differ from a fresh explicitly allocated conservative calculation. The processed CSVs have not been altered.</p></div></section>
+<section class="section" id="resources"><h2>Explore the evidence</h2><p class="intro">The paper, two primary numerical CSVs and six charts are directly accessible from this standalone page. The full GitHub repository also contains all processed tables, tests, reconstruction scripts and historical robot source.</p>
+<div class="resources"><a class="resource" href="paper/Starlight_Engineering_Research_Paper.pdf">27-page engineering paper <em>Methods, full results, limitations and appendices · PDF</em></a>
+<a class="resource" href="public_tables/primary_grid.csv">Primary model grid <em>All 66 condition rows · CSV</em></a>
+<a class="resource" href="public_tables/confirmation.csv">Independent confirmation table <em>All eight settings with original stored intervals · CSV</em></a>
+<a class="resource" href="#top" id="repo-link">Browse the full repository <em>Processed tables, executable checks, historical source and detailed audit</em></a></div></section>
+</main><footer><div class="shell"><strong>STARLIGHT · IRIS ROBO0065</strong><p>Research communication and public processed-data release · November 2026</p><p>The research does not certify physical vehicle safety. The five discrepant interval rows and unverified decision-cost claims remain explicitly disclosed.</p><p><a href="#top">Back to the top</a></p></div></footer>
+<script>
+(function(){
+  const link=document.getElementById('repo-link');
+  const host=window.location.hostname;
+  if(host.endsWith('.github.io')){
+    const user=host.split('.')[0];const repo=decodeURIComponent(window.location.pathname.split('/').filter(Boolean)[0]||'');
+    if(user && repo){link.href='https://github.com/'+encodeURIComponent(user)+'/'+encodeURIComponent(repo);}
+  }else{link.href='../README.md';}
+})();
+</script>
+</body>
+</html>

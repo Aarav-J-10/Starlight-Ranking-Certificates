@@ -1,0 +1,26 @@
+{
+  "operator": "REPLACE_WITH_OPERATOR",
+  "apparatus_revision": "UNCOMMISSIONED",
+  "calibration_file": null,
+  "sensors": [],
+  "pins": {},
+  "video_pointers": [],
+  "log_pointers": [],
+  "paired_session_ids": [],
+  "consent_flags": {},
+  "arming": {
+    "operator": "REPLACE_WITH_OPERATOR",
+    "apparatus_revision": "UNCOMMISSIONED",
+    "confirmed_revision": "NOT_VERIFIED",
+    "timeout_s": 1,
+    "max_duty": 0.05,
+    "checks": {
+      "independent_latching_estop": false,
+      "wiring_verified": false,
+      "power_limits_verified": false,
+      "calibration_verified": false,
+      "physical_clearance": false,
+      "operator_supervised": false
+    }
+  }
+}

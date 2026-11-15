@@ -1,0 +1,247 @@
+{
+  "evidence/raw_data_index.csv": {
+    "columns": [
+      "asset_id",
+      "category",
+      "description",
+      "location",
+      "sha256_or_status"
+    ],
+    "rows": 6,
+    "first_id": "RAW-WP2-STEER"
+  },
+  "physical/d1/extended_shared_failure_pairs.csv": {
+    "columns": [
+      "pair_id",
+      "study_id",
+      "session",
+      "clock_fail",
+      "compass_fail",
+      "outcome",
+      "timestamp"
+    ],
+    "rows": 204,
+    "first_id": "D1E_001"
+  },
+  "physical/d1/extended_shared_summary.csv": {
+    "columns": [
+      "dataset",
+      "failure_bearing_pairs",
+      "both_fail",
+      "clock_only",
+      "compass_only",
+      "shared_fraction",
+      "note"
+    ],
+    "rows": 1,
+    "first_id": "extended_S1S5_pairlevel"
+  },
+  "physical/d1/shared_failure_60pair.csv": {
+    "columns": [
+      "pair_id",
+      "study_id",
+      "session",
+      "clock_fail",
+      "compass_fail",
+      "outcome",
+      "condition",
+      "timestamp"
+    ],
+    "rows": 60,
+    "first_id": "D1_001"
+  },
+  "physical/wp1/emergency_stop_trips.csv": {
+    "columns": [
+      "trip_id",
+      "study_id",
+      "session",
+      "button_pressed",
+      "motor_cut_confirmed",
+      "cut_latency_ms",
+      "cohort",
+      "timestamp"
+    ],
+    "rows": 24,
+    "first_id": "ES_01"
+  },
+  "physical/wp2/latency_events.csv": {
+    "columns": [
+      "event_id",
+      "latency_ms",
+      "missed_33ms",
+      "missed_50ms",
+      "session",
+      "timestamp"
+    ],
+    "rows": 200,
+    "first_id": "LAT_001"
+  },
+  "physical/wp2/steering_calibration.csv": {
+    "columns": [
+      "session_id",
+      "battery_voltage_V",
+      "sweep_direction",
+      "servo_command",
+      "protractor_angle_deg",
+      "AS5600_angle_deg",
+      "timestamp"
+    ],
+    "rows": 126,
+    "first_id": "STEER_01"
+  },
+  "physical/wp3/dock_camera_accuracy.csv": {
+    "columns": [
+      "point_id",
+      "frame_idx",
+      "position_error_mm",
+      "heading_error_deg",
+      "aruco_id_left",
+      "aruco_id_right",
+      "timestamp"
+    ],
+    "rows": 105,
+    "first_id": "P1"
+  },
+  "physical/wp4/clock_compass_pairs.csv": {
+    "columns": [
+      "pair_id",
+      "study_id",
+      "session",
+      "condition",
+      "order",
+      "controller",
+      "heading_shift_deg",
+      "battery_V",
+      "timestamp"
+    ],
+    "rows": 100,
+    "first_id": "CC_001"
+  },
+  "physical/wp5_wp6/docking_session_summary.csv": {
+    "columns": [
+      "study_id",
+      "session",
+      "n_pairs",
+      "clock_success",
+      "compass_success"
+    ],
+    "rows": 5,
+    "first_id": "WP5_docking"
+  },
+  "physical/wp5_wp6/independent_audit.csv": {
+    "columns": [
+      "unit_id",
+      "unit_type",
+      "decision",
+      "reference_outcome",
+      "agreement",
+      "unsupported_winner",
+      "n_pairs_in_unit",
+      "timestamp"
+    ],
+    "rows": 10,
+    "first_id": "U01"
+  },
+  "physical/wp7/linkage_ABA.csv": {
+    "columns": [
+      "phase",
+      "rep",
+      "measured_gain_response",
+      "servo_current_A",
+      "clock_heading_shift_deg",
+      "compass_heading_shift_deg",
+      "as5600_delta_deg",
+      "timestamp"
+    ],
+    "rows": 36,
+    "first_id": "A_baseline"
+  },
+  "physical/wp8/colour_sorter.csv": {
+    "columns": [
+      "batch_id",
+      "recipe",
+      "condition",
+      "n_items",
+      "n_correct",
+      "accuracy",
+      "timestamp"
+    ],
+    "rows": 34,
+    "first_id": "SORT_001"
+  },
+  "simulation/attribution.csv": {
+    "columns": [
+      "factor",
+      "variance_share",
+      "note"
+    ],
+    "rows": 8,
+    "first_id": "gain_g"
+  },
+  "simulation/cartpole_summary.csv": {
+    "columns": [
+      "experiment",
+      "n_episodes",
+      "note"
+    ],
+    "rows": 1,
+    "first_id": "cartpole_transfer"
+  },
+  "simulation/confirmation.csv": {
+    "columns": [
+      "setting_id",
+      "gain_g",
+      "stress_s",
+      "timestep_s",
+      "n_pairs",
+      "n_plus",
+      "n_minus",
+      "delta_pp",
+      "ci_low_pp",
+      "ci_high_pp",
+      "certificate_label",
+      "missions_executed",
+      "note"
+    ],
+    "rows": 8,
+    "first_id": "CONF_1.200_s030_dt040"
+  },
+  "simulation/model_forms.csv": {
+    "columns": [
+      "model_id",
+      "model_form",
+      "gain_g",
+      "stress_s",
+      "timestep_s",
+      "is_base_repeat",
+      "n_pairs",
+      "n_plus",
+      "n_minus",
+      "delta_pp",
+      "ci_low_pp",
+      "ci_high_pp",
+      "certificate_label",
+      "missions_executed_additional"
+    ],
+    "rows": 15,
+    "first_id": "MF_base_g12"
+  },
+  "simulation/primary_grid.csv": {
+    "columns": [
+      "condition_id",
+      "gain_g",
+      "stress_s",
+      "timestep_s",
+      "n_pairs",
+      "n_plus",
+      "n_minus",
+      "delta_pp",
+      "ci_low_pp",
+      "ci_high_pp",
+      "certificate_label",
+      "missions_executed"
+    ],
+    "rows": 66,
+    "first_id": "G001"
+  }
+}

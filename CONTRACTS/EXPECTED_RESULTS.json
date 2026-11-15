@@ -1,0 +1,130 @@
+{
+  "release_scope": "Processed-data-only; no provenance proof or original simulator generator",
+  "simulation": {
+    "primary_grid_rows": 66,
+    "grid_certificates": {
+      "A": 8,
+      "D": 29,
+      "unresolved": 29
+    },
+    "grid_pairs_per_cell": 4000,
+    "grid_missions": 528000,
+    "confirmation_rows": 8,
+    "confirmation_pairs_per_setting": 8000,
+    "confirmation_missions": 128000,
+    "model_forms_rows": 15,
+    "non_base_model_forms": 12,
+    "additional_model_missions": 96000,
+    "total_robot_missions": 752000,
+    "total_matched_pairs": 376000,
+    "gain_1_200": {
+      "n_plus": 90,
+      "n_minus": 6,
+      "N": 8000,
+      "delta_pp": 1.05
+    },
+    "gain_1_260": {
+      "n_plus": 59,
+      "n_minus": 293,
+      "N": 8000,
+      "delta_pp": -2.925
+    }
+  },
+  "physical": {
+    "wp1": {
+      "trips": 24,
+      "initial_pass": 10,
+      "overall_confirmed": 23,
+      "mean_successful_cut_ms": 14.195652173913043
+    },
+    "wp2_calibration": {
+      "rows": 126,
+      "protractor_ols_slope": 1.2379998827838827
+    },
+    "wp2_latency": {
+      "events": 200,
+      "p95_ms": 28.16,
+      "above_33ms": 3,
+      "above_50ms": 0
+    },
+    "wp3_camera": {
+      "frames": 105,
+      "position_p95_mm": 2.48,
+      "heading_p95_deg": 1.286
+    },
+    "wp4": {
+      "n_by_controller": {
+        "dial_pilot_mismatch": 22,
+        "linkage_consolidated_mismatch": 18,
+        "linkage_consolidated_matched": 10
+      },
+      "means": {
+        "dial_pilot_mismatch": {
+          "Clock": 6.8,
+          "Compass": 1.1
+        },
+        "linkage_consolidated_mismatch": {
+          "Clock": 6.42,
+          "Compass": 0.48
+        },
+        "linkage_consolidated_matched": {
+          "Clock": 6.64,
+          "Compass": 0.65
+        }
+      }
+    },
+    "wp5": {
+      "sessions": 5,
+      "pairs": 60,
+      "clock_success": 41,
+      "compass_success": 53
+    },
+    "wp6": {
+      "audit_units": 10,
+      "agreements": 8,
+      "unsupported_winners": 1
+    },
+    "wp7": {
+      "rows": 36,
+      "runs_per_phase": 12,
+      "mean_gain": {
+        "A_baseline": 1.2374333333333334,
+        "B_modified": 1.268325,
+        "Aprime_restored": 1.2454333333333334
+      },
+      "mean_current": {
+        "A_baseline": 0.41975,
+        "B_modified": 0.5378333333333334,
+        "Aprime_restored": 0.4260833333333333
+      }
+    },
+    "wp8": {
+      "batches": 34,
+      "S1_fixed": {
+        "correct": 188,
+        "total": 238
+      },
+      "S2_calibrated": {
+        "correct": 202,
+        "total": 216
+      },
+      "S3_recheck": {
+        "correct": 198,
+        "total": 219
+      }
+    },
+    "d1_60": {
+      "pairs": 60,
+      "both_succeed": 33,
+      "both_fail": 18,
+      "clock_only": 8,
+      "compass_only": 1
+    },
+    "d1_extended": {
+      "failure_bearing_pairs": 204,
+      "both_fail": 160,
+      "clock_only": 38,
+      "compass_only": 6
+    }
+  }
+}

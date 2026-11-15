@@ -1,0 +1,12 @@
+# Publishing on GitHub and presenting at IRIS
+
+1. Review `docs/RIGHTS_AND_PUBLICATION.md` and obtain the appropriate co-author and photo/software redistribution permissions before making a public repository. Confirm whether early publication affects any planned IP filings.
+2. Create a new GitHub repository, suggested name: `starlight-iris-2026`, with **no pre-generated README/license**. Upload *the contents of this folder*, not the outer ZIP as a single file. Preserve `.github/workflows/verify.yml`, `.gitattributes`, `paper/`, `REFERENCE_DATA/` and `docs/`.
+3. Wait for the Actions check called **Verify public research release**. On a computer, independently run the four terminal commands in the main README.
+4. For optional online viewing, use GitHub **Settings → Pages → Deploy from a branch → main → /docs** for the supplied static landing site. The resulting Pages URL normally follows `https://USERNAME.github.io/REPOSITORY/` after GitHub publishes it. Use the actual URL only after confirming it works.
+5. **IRIS physical display restriction:** the supplied 2026–27 guidelines say that **web addresses** and **personal photographs/acknowledgements** are allowed **only inside research papers or data books**, and that **student identity must not appear on the poster**. Therefore do **not** place a GitHub URL, handle, or QR code on the poster without explicit IRIS approval. A QR code that represents a web address should be treated as a web address for conservative compliance. If providing a repository link, keep it inside the research paper/data book and follow the event committee's instructions.
+6. Keep the physical lab notebook and original sealed evidence separate. This repository does not contain original raw instrument files or video audit chain-of-custody. Do not label it "complete raw data".
+7. If a website link is permitted within the research paper/data book, test its accessibility on a phone with mobile data. The HTML page under `/docs/index.html` can also be opened locally without internet.
+8. Bring the **original** unaltered logbook and original evidence, with the research paper and data book. The guideline explicitly says not to copy rough notes into a polished replacement and says no experiments may be conducted at the fair. Historic GPIO programs in this repository are not a live-demo plan.
+
+Tip: Within a **permitted paper/data-book location**, point to the landing page or README rather than directly to a ZIP. The physical poster itself must comply with the separate display restrictions.

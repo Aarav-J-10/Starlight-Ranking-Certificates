@@ -1,0 +1,13 @@
+{
+  "label": "ILLUSTRATIVE_CONFIGURATION_NOT_HISTORICAL",
+  "difference_pp": [-0.4, 0.4],
+  "reliability_a": [0.96, 0.99],
+  "reliability_d": [0.96, 0.99],
+  "policy": {
+    "minimum_reliability": 0.95,
+    "equivalence_pp": 0.5,
+    "testing_cost": 1,
+    "error_cost": 10,
+    "budget": 5
+  }
+}
