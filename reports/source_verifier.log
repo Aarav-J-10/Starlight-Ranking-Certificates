@@ -1,0 +1,66 @@
+[PASS] 66 grid rows
+[PASS] grid unique condition_id
+[PASS] n_plus+n_minus <= n_pairs (grid)
+[PASS] grid has no both_succeed/both_fail
+[PASS] conf has no both_succeed/both_fail
+[PASS] labels 8A/29D/29U
+[PASS] no Clock/Compass sim cols
+[PASS] 15 model-form rows
+[PASS] 12 non-base
+[PASS] non-base n_pairs=4000
+[PASS] missions_additional == 2*n_pairs
+[PASS] model-form deltas match counts
+[PASS] base g=1.2 matches grid n+/n-
+[PASS] base g=1.25 matches grid n+/n-
+[PASS] base g=1.3 matches grid n+/n-
+[NOT CHECKED] model-form CI family derivation � interval endpoints depend on multiplicity procedure not recomputed here
+[PASS] confirm 1.200 witness
+[PASS] confirm 1.260 witness
+[PASS] confirm 1.245 87/31
+[PASS] confirm 1.255 67/93
+[PASS] conf missions=2*n_pairs
+[PASS] conf n_plus+n_minus <= n_pairs
+[PASS] 752000 missions � 752000
+[PASS] attribution gain~0.7313
+[PASS] attribution sum~1
+[PASS] WP1 10/10 initial
+[PASS] WP1 23/24 confirmed
+[PASS] WP1 ES_12 failed
+[PASS] WP1 mean latency ~14.2 on successes
+[PASS] WP1 failed trip has null latency
+[PASS] WP3 position p95~2.48 � 2.480
+[PASS] WP3 heading p95~1.286 � 1.286
+[PASS] WP3 heading FAIL vs 1.0
+[PASS] WP4 dial n=22
+[PASS] WP4 dial Clock 6.80
+[PASS] WP4 dial Compass 1.10
+[PASS] WP4 link mis Clock 6.42
+[PASS] WP4 link mis Compass 0.48
+[PASS] WP4 link mat n=10
+[PASS] WP4 link mat Clock 6.64
+[NOT CHECKED] WP4 vs poster pilot labels � poster may still show 6.75/1.14; CSV-authoritative values are 6.80/1.10
+[PASS] steering~1.238 � 1.238000
+[PASS] latency 3 misses @33ms
+[PASS] decision-cost caselevel intentionally absent
+[PASS] decision-cost aggregated intentionally absent
+[NOT CHECKED] seven-baseline decision-cost evaluation � excluded due to unresolved policy definitions
+[PASS] D1ext 204 rows
+[PASS] D1ext 160 both_fail
+[PASS] D1ext unique pair_id
+[PASS] D1ext exclusive outcomes
+[PASS] cartpole_summary exists
+[PASS] old cartpole.csv absent
+[PASS] dictionary has no clock_failures
+[PASS] dictionary notes 1.286 heading
+[PASS] dictionary notes ES_12 / 23/24
+[PASS] changelog has no 'mismatch inflates'
+[PASS] SHA256_manifest present
+[PASS] SHA256SUMS present
+[PASS] SHA256_manifest content verification � 25 entries
+[PASS] SHA256SUMS agree with CSV manifest
+[PASS] manifest covers all release files
+[NOT CHECKED] raw instrument authenticity � original logs/videos not in public release
+[NOT CHECKED] simulator regeneration � generator/seeds not in public release
+----
+ALL SUPPORTED INTERNAL CHECKS PASS
+(5 item(s) marked NOT CHECKED)

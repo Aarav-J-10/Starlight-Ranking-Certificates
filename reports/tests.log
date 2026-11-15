@@ -1,0 +1,22 @@
+........................................................................ [ 66%]
+....................................                                     [100%]
+=============================== tests coverage ================================
+_______________ coverage: platform win32, python 3.12.3-final-0 _______________
+
+Name                       Stmts   Miss  Cover   Missing
+--------------------------------------------------------
+starlight\__init__.py          1      0   100%
+starlight\__main__.py          2      2     0%   1-3
+starlight\acquisition.py     175      0   100%
+starlight\analysis.py        157      8    95%   49-51, 67-68, 91, 205, 216
+starlight\cli.py              78      8    90%   49, 60-64, 73-74
+starlight\controllers.py      35      0   100%
+starlight\decision.py         32      0   100%
+starlight\reports.py         193      5    97%   53-54, 83-85
+starlight\schema.py          152      0   100%
+starlight\statistics.py       30      3    90%   23, 26-27
+starlight\vision.py           56      2    96%   13-14
+--------------------------------------------------------
+TOTAL                        911     28    97%
+Coverage JSON written to file REPORTS/coverage.json
+108 passed in 45.75s
