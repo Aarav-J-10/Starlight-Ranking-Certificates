@@ -1,0 +1,2 @@
+experiment,n_episodes,note
+cartpole_transfer,5000,Separate CartPole grid in manuscript supplement; excluded from 752000 robot-mission total

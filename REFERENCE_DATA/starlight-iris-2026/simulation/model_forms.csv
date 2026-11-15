@@ -1,0 +1,16 @@
+model_id,model_form,gain_g,stress_s,timestep_s,is_base_repeat,n_pairs,n_plus,n_minus,delta_pp,ci_low_pp,ci_high_pp,certificate_label,missions_executed_additional
+MF_base_g12,base,1.2,0.03,0.04,1,4000,55,7,1.2,0.254,2.135,A,0
+MF_base_g125,base,1.25,0.03,0.04,1,4000,39,24,0.375,-0.659,1.406,unresolved,0
+MF_base_g13,base,1.3,0.03,0.04,1,4000,24,405,-9.525,-11.682,-7.32,D,0
+MF_clearance_g12,clearance,1.2,0.03,0.04,0,4000,264,85,4.475,2.209,6.719,A,8000
+MF_clearance_g125,clearance,1.25,0.03,0.04,0,4000,329,590,-6.525,-10.105,-2.916,D,8000
+MF_clearance_g13,clearance,1.3,0.03,0.04,0,4000,81,865,-19.6,-22.716,-16.394,D,8000
+MF_fractional_g12,fractional,1.2,0.03,0.04,0,4000,70,1,1.725,0.82,2.62,A,8000
+MF_fractional_g125,fractional,1.25,0.03,0.04,0,4000,131,172,-1.025,-3.211,1.166,unresolved,8000
+MF_fractional_g13,fractional,1.3,0.03,0.04,0,4000,181,638,-11.425,-14.68,-8.117,D,8000
+MF_nonlinear_g12,nonlinear,1.2,0.03,0.04,0,4000,1331,49,32.05,28.652,35.301,A,8000
+MF_nonlinear_g125,nonlinear,1.25,0.03,0.04,0,4000,54,4,1.25,0.362,2.126,A,8000
+MF_nonlinear_g13,nonlinear,1.3,0.03,0.04,0,4000,35,38,-0.075,-1.189,1.04,unresolved,8000
+MF_triangular_g12,triangular,1.2,0.03,0.04,0,4000,23,1,0.55,-0.039,1.137,unresolved,8000
+MF_triangular_g125,triangular,1.25,0.03,0.04,0,4000,26,7,0.475,-0.267,1.211,unresolved,8000
+MF_triangular_g13,triangular,1.3,0.03,0.04,0,4000,18,315,-7.425,-9.347,-5.464,D,8000

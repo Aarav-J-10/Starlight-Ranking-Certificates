@@ -1,0 +1,7 @@
+asset_id,category,description,location,sha256_or_status
+RAW-WP2-STEER,physical,AS5600/protractor sweep instrument logs,not included in public release,not_included
+RAW-WP2-LAT,physical,latency scope captures,not included in public release,not_included
+RAW-WP3-IMG,physical,dock camera frames + ArUco detections,not included in public release,not_included
+RAW-WP4-LOG,physical,Clock/Compass run logs and videos,not included in public release,not_included
+RAW-SIM-SEED,simulation,"simulator binaries, configs, RNG seeds",not included in public release,not_included
+RAW-D1-EXT,physical,Original sealed S1-S5 instrument/video records for extended D1 (processed 204-pair CSV IS included at physical/d1/extended_shared_failure_pairs.csv),processed export in package; original media not included in public release,processed_csv_included_raw_not_included

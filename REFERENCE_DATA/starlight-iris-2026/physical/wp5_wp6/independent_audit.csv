@@ -1,0 +1,11 @@
+unit_id,unit_type,decision,reference_outcome,agreement,unsupported_winner,n_pairs_in_unit,timestamp
+U01,dial,select_A,select_A,1,0,11,2026-11-06 09:40:00
+U02,dial,select_D,select_D,1,0,11,2026-11-06 11:22:00
+U03,dial,accept_either,accept_either,1,0,12,2026-11-06 13:04:00
+U04,dial,select_D,select_A,0,1,14,2026-11-06 14:46:00
+U05,dial,select_D,select_D,1,0,11,2026-11-06 16:28:00
+U06,dial,request_more,request_more,1,0,8,2026-11-06 18:10:00
+U07,dial,select_A,select_A,1,0,11,2026-11-06 19:52:00
+U08,dial,select_A,accept_either,0,0,13,2026-11-06 21:34:00
+U09,linkage,select_D,select_D,1,0,9,2026-11-06 23:16:00
+U10,linkage,reject_both,reject_both,1,0,13,2026-11-07 00:58:00

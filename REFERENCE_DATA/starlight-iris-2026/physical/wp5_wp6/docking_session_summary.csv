@@ -1,0 +1,6 @@
+study_id,session,n_pairs,clock_success,compass_success
+WP5_docking,WP5_S1,12,9,11
+WP5_docking,WP5_S2,12,8,10
+WP5_docking,WP5_S3,12,7,11
+WP5_docking,WP5_S4,12,9,10
+WP5_docking,WP5_S5,12,8,11

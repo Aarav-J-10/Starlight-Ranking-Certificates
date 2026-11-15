@@ -1,0 +1,9 @@
+setting_id,gain_g,stress_s,timestep_s,n_pairs,n_plus,n_minus,delta_pp,ci_low_pp,ci_high_pp,certificate_label,missions_executed,note
+CONF_1.200_s030_dt040,1.2,0.03,0.04,8000,90,6,1.05,0.518,1.576,A,16000,independent confirmation bank; master seed 202610032 (manuscript)
+CONF_1.245_s030_dt040,1.245,0.03,0.04,8000,87,31,0.7,0.048,1.35,A,16000,independent confirmation bank; master seed 202610032 (manuscript)
+CONF_1.255_s030_dt040,1.255,0.03,0.04,8000,67,93,-0.325,-0.98,0.33,unresolved,16000,independent confirmation bank; master seed 202610032 (manuscript)
+CONF_1.260_s030_dt040,1.26,0.03,0.04,8000,59,293,-2.925,-3.982,-1.861,D,16000,independent confirmation bank; master seed 202610032 (manuscript)
+CONF_1.200_s050_dt040,1.2,0.05,0.04,8000,210,40,2.125,1.12,3.13,A,16000,independent confirmation bank; master seed 202610032 (manuscript)
+CONF_1.300_s015_dt040,1.3,0.015,0.04,8000,8,720,-8.9,-10.45,-7.32,D,16000,independent confirmation bank; master seed 202610032 (manuscript)
+CONF_1.230_s030_dt040,1.23,0.03,0.04,8000,72,28,0.55,-0.05,1.15,unresolved,16000,independent confirmation bank; master seed 202610032 (manuscript)
+CONF_1.280_s030_dt040,1.28,0.03,0.04,8000,35,310,-3.4375,-4.52,-2.34,D,16000,independent confirmation bank; master seed 202610032 (manuscript)

@@ -1,0 +1,9 @@
+factor,variance_share,note
+gain_g,0.7313,main effect of steering-gain factor
+stress_s,0.0912,main effect of disturbance scale
+timestep_s,0.0541,main effect of discretization
+g_x_s,0.0488,gain × stress interaction
+g_x_dt,0.0315,gain × timestep interaction
+s_x_dt,0.0184,stress × timestep interaction
+g_x_s_x_dt,0.0142,three-way interaction
+residual,0.0105,unexplained residual

@@ -1,0 +1,2 @@
+dataset,failure_bearing_pairs,both_fail,clock_only,compass_only,shared_fraction,note
+extended_S1S5_pairlevel,204,160,38,6,0.7843,Pair-level export; study_id=D1_extended_shared_failure. Overlap with 60-pair detailed study not claimed.

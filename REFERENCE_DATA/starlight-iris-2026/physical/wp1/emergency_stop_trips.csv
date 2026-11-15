@@ -1,0 +1,25 @@
+trip_id,study_id,session,button_pressed,motor_cut_confirmed,cut_latency_ms,cohort,timestamp
+ES_01,WP1_estop,WP1_estop_bench,1,1,12.3,initial_gate,2026-11-01 14:05:00
+ES_02,WP1_estop,WP1_estop_bench,1,1,13.2,initial_gate,2026-11-01 14:07:00
+ES_03,WP1_estop,WP1_estop_bench,1,1,13.6,initial_gate,2026-11-01 14:10:00
+ES_04,WP1_estop,WP1_estop_bench,1,1,13.6,initial_gate,2026-11-01 14:15:00
+ES_05,WP1_estop,WP1_estop_bench,1,1,15.4,initial_gate,2026-11-01 14:19:00
+ES_06,WP1_estop,WP1_estop_bench,1,1,12.8,initial_gate,2026-11-01 14:22:00
+ES_07,WP1_estop,WP1_estop_bench,1,1,12.8,initial_gate,2026-11-01 14:29:00
+ES_08,WP1_estop,WP1_estop_bench,1,1,13.7,initial_gate,2026-11-01 14:35:00
+ES_09,WP1_estop,WP1_estop_bench,1,1,15.1,initial_gate,2026-11-01 14:37:00
+ES_10,WP1_estop,WP1_estop_bench,1,1,13.9,initial_gate,2026-11-01 14:43:00
+ES_11,WP1_estop,WP1_estop_bench,1,1,14.1,extended_log,2026-11-01 14:46:00
+ES_12,WP1_estop,WP1_estop_bench,1,0,,extended_log,2026-11-01 14:48:00
+ES_13,WP1_estop,WP1_estop_bench,1,1,15.4,extended_log,2026-11-01 14:53:00
+ES_14,WP1_estop,WP1_estop_bench,1,1,17.3,extended_log,2026-11-01 14:57:00
+ES_15,WP1_estop,WP1_estop_bench,1,1,13.1,extended_log,2026-11-01 14:59:00
+ES_16,WP1_estop,WP1_estop_bench,1,1,16.1,extended_log,2026-11-01 15:01:00
+ES_17,WP1_estop,WP1_estop_bench,1,1,15.4,extended_log,2026-11-01 15:04:00
+ES_18,WP1_estop,WP1_estop_bench,1,1,13.7,extended_log,2026-11-01 15:08:00
+ES_19,WP1_estop,WP1_estop_bench,1,1,15.3,extended_log,2026-11-01 15:15:00
+ES_20,WP1_estop,WP1_estop_bench,1,1,14.6,extended_log,2026-11-01 15:19:00
+ES_21,WP1_estop,WP1_estop_bench,1,1,12.0,extended_log,2026-11-01 15:23:00
+ES_22,WP1_estop,WP1_estop_bench,1,1,14.2,extended_log,2026-11-01 15:30:00
+ES_23,WP1_estop,WP1_estop_bench,1,1,13.7,extended_log,2026-11-01 15:35:00
+ES_24,WP1_estop,WP1_estop_bench,1,1,15.2,extended_log,2026-11-01 15:41:00
