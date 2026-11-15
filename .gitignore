@@ -1,0 +1,26 @@
+# Local environments, secrets, generated analysis and caches
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+outputs/
+REPORTS/replay/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

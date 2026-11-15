@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If using the Starlight paper or public processed research exports, cite the paper and identify this repository as a processed-data/reconstructed-analysis release."
+title: "Starlight: Predicting Design Ranking Reversals in an Autonomous Car from Measured Steering Gain"
+type: software
+authors:
+  - family-names: Jalan
+    given-names: Aarav
+  - family-names: Zaveri
+    given-names: Darsh
+version: 1.0.0
+date-released: 2026-11-15
+keywords:
+  - robotics
+  - paired simulation
+  - reproducibility
+  - uncertainty quantification
+  - steering calibration
+abstract: "Public processed data and later reconstructed read-only analysis tools accompanying the Starlight IRIS engineering manuscript. Does not include the original simulator or raw instrument binaries."
