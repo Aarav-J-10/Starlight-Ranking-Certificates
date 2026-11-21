@@ -2,21 +2,21 @@
 from pathlib import Path
 import numpy as np
 import pandas as pd
-from scipy.stats import beta
-import sys,json,hashlib,shutil,datetime,importlib,time
-from concurrent.futures import ProcessPoolExecutor,as_completed
-R=Path(__file__).resolve().parents[1]
-sys.path.insert(0,str(R/'code/models'))
-NAMES=('illumination','ambiguity','camera_pitch','camera_offset','sensor_noise','latency','steering_offset','steering_lag','battery_loss','slip')
-def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
-def simultaneous(a,d,K,alpha):
-    a=np.asarray(a);d=np.asarray(d);v=d-a;n=len(v)
-    plus=int(sum(v==1));minus=int(sum(v==-1))
-    tail=alpha/(4*K)
-    def cp(x):return (0. if x==0 else float(beta.ppf(tail,x,n-x+1)),1. if x==n else float(beta.ppf(1-tail,x+1,n-x)))
-    pl,pu=cp(plus);ml,mu=cp(minus);lo=pl-mu;hi=pu-ml
-    eps=float(np.sqrt(2*np.log(2*K/alpha)/n))
-    return dict(N=n,plus=plus,minus=minus,A_failure=float(a.mean()),D_failure=float(d.mean()),delta=float(v.mean()),lower=lo,upper=hi,hoeffding_lower=max(-1,float(v.mean())-eps),hoeffding_upper=min(1,float(v.mean())+eps),region='A' if lo>0 else ('D' if hi<0 else 'U'),K=K,alpha=alpha)
+from scipy.stats import beta         #calculate exact Clopper–Pearson binomial confidence intervals.
+import sys,json,hashlib,shutil,datetime,importlib,time         #importing important utilities like reason JSON files and file copyinng
+from concurrent.futures import ProcessPoolExecutor,as_completed    #multiprocessing tools
+R=Path(__file__).resolve().parents[1]    #the project root, as two directory levels above this file.
+sys.path.insert(0,str(R/'code/models'))        Adds the simulator-model directory to Python's import
+NAMES=('illumination','ambiguity','camera_pitch','camera_offset','sensor_noise','latency','steering_offset','steering_lag','battery_loss','slip')    #Defines names for the ten disturbance dimensions
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()        #reads a file's bytes and returns its SHA-256 digest so later code can detect changes
+def simultaneous(a,d,K,alpha):        #alpha is family error budget
+    a=np.asarray(a);d=np.asarray(d);v=d-a;n=len(v)        #Converts arrays to NumPy
+    plus=int(sum(v==1));minus=int(sum(v==-1))        #Counts plus (only D fails) and minus (only A fails)
+    tail=alpha/(4*K)         #beta-distribution tail probability to alpha/4k (paired meaning multiply by 2 and then two tails so multiply by 4)
+    def cp(x):return (0. if x==0 else float(beta.ppf(tail,x,n-x+1)),1. if x==n else float(beta.ppf(1-tail,x+1,n-x)))       #calculates the lower and upper Clopper–Pearson bounds
+    pl,pu=cp(plus);ml,mu=cp(minus);lo=pl-mu;hi=pu-ml        #Calculates confidence intervals for both discordance probabilities
+    eps=float(np.sqrt(2*np.log(2*K/alpha)/n))            #Hoeffding uncertainty radius for the bounded paired difference
+    return dict(N=n,plus=plus,minus=minus,A_failure=float(a.mean()),D_failure=float(d.mean()),delta=float(v.mean()),lower=lo,upper=hi,hoeffding_lower=max(-1,float(v.mean())-eps),hoeffding_upper=min(1,float(v.mean())+eps),region='A' if lo>0 else ('D' if hi<0 else 'U'),K=K,alpha=alpha)    #Returns counts, failure rates, estimated difference, both types of bounds, and classification A, D or U (unresolved).
 def bank(master,n):
     seeds=np.random.default_rng(np.random.SeedSequence([master,0])).integers(1,2**31-1,n)
     u=np.random.default_rng(np.random.SeedSequence([master,1])).random((n,10))
