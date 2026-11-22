@@ -1,4 +1,3 @@
-"""Frozen, fixed-size Starlight experiment and independent confirmation."""
 from pathlib import Path
 import numpy as np
 import pandas as pd
